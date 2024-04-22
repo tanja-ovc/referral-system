@@ -36,8 +36,6 @@ class PhoneUser(models.Model):
         'код подтверждения',
         validators=[validate_confirmation_code],
         max_length=4,
-        blank=True,
-        null=True,
     )
     is_authenticated = models.BooleanField('аутентифицирован?', default=False)
     owned_invite_code = models.OneToOneField(
@@ -45,8 +43,6 @@ class PhoneUser(models.Model):
         on_delete=models.PROTECT,
         related_name='code_owner',
         verbose_name='присвоенный invite-код',
-        blank=True,
-        null=True,
     )
     activated_invite_code = models.ForeignKey(
         InviteCode,
