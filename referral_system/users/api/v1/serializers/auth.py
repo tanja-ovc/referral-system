@@ -57,7 +57,6 @@ class PhoneSignInSerializer(serializers.ModelSerializer):
         }
 
 
-@extend_schema_serializer
 class ConfirmCodeSerializer(serializers.Serializer):
     confirmation_code = serializers.CharField(
         validators=[validate_confirmation_code]
