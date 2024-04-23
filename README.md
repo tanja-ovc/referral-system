@@ -3,7 +3,7 @@
 
 Проект развёрнут на _pythonanywhere.com_:
 
-Админка:
+Админка (логин: admin, пароль: admin):
 
 https://tanjaov.pythonanywhere.com/admin/
 
